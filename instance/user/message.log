@@ -1,0 +1,144 @@
+
+**************Begin new trust node proc****************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"","receiver_uuid":"","route
+    ":"","flow":"FINISH","state":"MATCH","flag":"NULL","ljump":1,"rjump":1,"record_t
+    ype":"MESSAGE","record_subtype":"CONN_SYNI","record_num":1,"record_size":89,"exp
+    and_num":0,"expand_size":0,"msg_uuid":"76bb80ac1b35c5768e875df8b432161a286b13500
+    f010cd97970a828abdf954a"},
+"RECORD":[
+    {"uuid":"8e8848e46b4725af6753531a332b447519206ae4d49304c2d0677a545d9b3725","serv
+        er_name":"server","service":"trust_server","server_addr":"","flags":0,"nonce":"A
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"
+    :user_client","route":"login","flow":"QUERY","state":"MATCH","flag":"NULL","ljum
+    p":1,"rjump":1,"record_type":"USER_DEFINE","record_subtype":"LOGIN","record_num"
+    :1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"f976cdd8548b14677e
+    e8dfd4cab26e18e8bc43620befdbe6e1caa50a2a85f4e2"},
+"RECORD":[
+    {"user_name":"zhaowen","passwd":"123","proc_name":"","machine_uuid":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"820881d10d6396c3e94753fbdcc
+    71574349680ddfa961d09c4269ef1467772d9","receiver_uuid":"print","route":"login","
+    flow":"QUERY","state":"RESPONSE","flag":"LOCAL","ljump":1,"rjump":1,"record_type
+    ":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"record_size":20,"expan
+    d_num":0,"expand_size":0,"msg_uuid":"f976cdd8548b14677ee8dfd4cab26e18e8bc43620be
+    fdbe6e1caa50a2a85f4e2"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"login succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"print","receiver_uuid":"","
+    route":"login","flow":"FINISH","state":"RESPONSE","flag":"LOCAL","ljump":2,"rjum
+    p":1,"record_type":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"recor
+    d_size":20,"expand_num":0,"expand_size":0,"msg_uuid":"f976cdd8548b14677ee8dfd4ca
+    b26e18e8bc43620befdbe6e1caa50a2a85f4e2"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"login succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"
+    :user_client","route":"record","flow":"QUERY","state":"MATCH","flag":"NULL","lju
+    mp":1,"rjump":1,"record_type":"RECORD_DEFINE","record_subtype":"WRITE","record_n
+    um":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"abc792f6b2a5150
+    0ffa0b756d8f6f122609fba74328f1553b9c3016471d618f9"},
+"RECORD":[
+    {"record_no":"001","segment":"shopkeeper_info","text":"item1 for $10.","list_inf
+        o":"20"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"820881d10d6396c3e94753fbdcc
+    71574349680ddfa961d09c4269ef1467772d9","receiver_uuid":"print","route":"record",
+    "flow":"QUERY","state":"RESPONSE","flag":"LOCAL","ljump":1,"rjump":1,"record_typ
+    e":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"record_size":25,"expa
+    nd_num":0,"expand_size":0,"msg_uuid":"abc792f6b2a51500ffa0b756d8f6f122609fba7432
+    8f1553b9c3016471d618f9"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"write data succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"print","receiver_uuid":"","
+    route":"record","flow":"FINISH","state":"RESPONSE","flag":"LOCAL","ljump":2,"rju
+    mp":1,"record_type":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"reco
+    rd_size":25,"expand_num":0,"expand_size":0,"msg_uuid":"abc792f6b2a51500ffa0b756d
+    8f6f122609fba74328f1553b9c3016471d618f9"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"write data succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"
+    :user_client","route":"record","flow":"QUERY","state":"MATCH","flag":"NULL","lju
+    mp":1,"rjump":1,"record_type":"RECORD_DEFINE","record_subtype":"READ","record_nu
+    m":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"78f6f9772caa558a
+    9bbe7c91b706d09f690a33f83e73b0c689170664a7726505"},
+"RECORD":[
+    {"record_no":"001","list_info":"20"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"820881d10d6396c3e94753fbdcc
+    71574349680ddfa961d09c4269ef1467772d9","receiver_uuid":"print","route":"record",
+    "flow":"QUERY","state":"RESPONSE","flag":"LOCAL","ljump":1,"rjump":1,"record_typ
+    e":"RECORD_DEFINE","record_subtype":"RECORD","record_num":1,"record_size":22,"ex
+    pand_num":0,"expand_size":0,"msg_uuid":"78f6f9772caa558a9bbe7c91b706d09f690a33f8
+    3e73b0c689170664a7726505"},
+"RECORD":[
+    {"record_no":"001","shopkeeper_info":"item1 for $10.","intermed_info":"","custom
+        er_info":"","list_info":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"print","receiver_uuid":"","
+    route":"record","flow":"FINISH","state":"RESPONSE","flag":"LOCAL","ljump":2,"rju
+    mp":1,"record_type":"RECORD_DEFINE","record_subtype":"RECORD","record_num":1,"re
+    cord_size":22,"expand_num":0,"expand_size":0,"msg_uuid":"78f6f9772caa558a9bbe7c9
+    1b706d09f690a33f83e73b0c689170664a7726505"},
+"RECORD":[
+    {"record_no":"001","shopkeeper_info":"item1 for $10.","intermed_info":"","custom
+        er_info":"","list_info":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************

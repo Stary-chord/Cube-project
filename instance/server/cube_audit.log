@@ -1,0 +1,159 @@
+time: 0.000318 :read 3 elem from file /root/cube-1.3/proc/main/base_define/namelist.json!
+time: 0.000422 :read 4 elem from file /root/cube-1.3/proc/main/base_define/dispatchnamelist.json!
+time: 0.000475 :read 1 elem from file /root/cube-1.3/proc/main/base_define/typelist.json!
+time: 0.000660 :read 7 elem from file /root/cube-1.3/proc/main/base_define/subtypelist.json!
+time: 0.000709 :read 1 elem from file /root/cube-1.3/proc/main/base_define/baseflag.json!
+time: 0.000919 :read 3 elem from file /root/cube-1.3/proc/main/base_define/memdb.json!
+time: 0.001510 :read 7 elem from file /root/cube-1.3/proc/main/base_define/msghead.json!
+time: 0.001762 :read 2 elem from file /root/cube-1.3/proc/main/base_define/msgrecord.json!
+time: 0.002253 :read 10 elem from file /root/cube-1.3/proc/main/base_define/base_msg.json!
+time: 0.002686 :read 8 elem from file /root/cube-1.3/proc/main/base_define/return.json!
+time: 0.002932 :read 3 elem from file /root/cube-1.3/proc/main/base_define/dispatchrecord.json!
+time: 0.003060 :read 2 elem from file /root/cube-1.3/proc/main/base_define/exmoduledefine.json!
+time: 0.003177 :read 1 elem from file /root/cube-1.3/proc/main/base_define/sys_conn.json!
+time: 0.003712 :read 9 elem from file user_define.json!
+time: 0.003988 :read 5 elem from file record_define.json!
+time: 0.004185 :read 4 elem from file label_define.json!
+time: 0.004257 :read 3 elem from file user.list!
+time: 0.009351 :this machine's local uuid is 8e8848e46b4725af6753531a332b447519206ae4d49304c2d0677a545d9b3725
+
+time: 0.014712 :read 1 connector!
+
+time: 0.014731 :conn server user_server begin to listen!
+
+time: 0.014923 :read 3 policy from router_policy file!
+time: 0.015093 :read 6 policy from aspect policy file!
+time: 0.015113 :system plugin router_proc is prepared!
+time: 0.020570 :system plugin connector_proc is prepared!
+time: 0.020666 :ex_module connector_proc started successfully!
+time: 0.020717 :ex_module router_proc started successfully!
+time: 0.020776 :ex_module user_server started successfully!
+time: 0.020814 :ex_module record_server started successfully!
+time: 0.020850 :ex_module user_label started successfully!
+time: 0.020881 :ex_module record_acl started successfully!
+time: 0.020904 :ex_module login_store started successfully!
+time: 0.020928 :ex_module recordlib started successfully!
+time: 0.020932 :instance load 8 module!
+
+time: 0.021007 :read 0 lib files!
+
+time: 1.024587 :create a new channel a40008c0!
+
+time: 1.024720 :send 269 data to conn (null)!
+
+time: 1.031184 :channel set name user!
+
+time: 1.031774 :router get proc connector_proc's message 
+time: 1.031811 :new msg match path addr_init's policy
+time: 1.036897 :Add a new link, proc name user
+
+time: 1.036977 :router get proc user_label's message 
+time: 2.028806 :create a new channel a4002a00!
+
+time: 2.028923 :send 270 data to conn (null)!
+
+time: 2.034931 :channel set name user2!
+
+time: 2.036772 :router get proc connector_proc's message 
+time: 2.036818 :new msg match path addr_init's policy
+time: 2.041894 :Add a new link, proc name user2
+
+time: 2.041962 :router get proc user_label's message 
+time: 3.028033 :channel receive (12800 1) message from conn user!
+
+time: 3.028070 :client forward (12800 1) message to main proc!
+
+time: 3.031531 :router get proc connector_proc's message 
+time: 3.031580 :remote msg match path login's policy
+time: 3.031689 :aspect message to path addr_label's policy
+time: 3.036827 :router get proc user_label's message 
+time: 3.042098 :router get proc user_server's message 
+time: 3.042291 :aspect message to path addr_verify's policy
+time: 3.047429 :router get proc user_label's message 
+time: 3.047535 :send message to conn process!
+time: 3.050384 :send 200 data to conn user!
+
+time: 3.050414 :send (12800  4)message 200 to conn user!
+
+time: 4.033958 :channel receive (12816 3) message from conn user!
+
+time: 4.033988 :client forward (12816 3) message to main proc!
+
+time: 4.036705 :router get proc connector_proc's message 
+time: 4.036725 :remote msg match path record's policy
+time: 4.036827 :aspect message to path write_access's policy
+time: 4.040832 :channel receive (12800 1) message from conn user2!
+
+time: 4.040882 :client forward (12800 1) message to main proc!
+
+time: 4.041944 :router get proc connector_proc's message 
+time: 4.041962 :remote msg match path login's policy
+time: 4.041967 :router get proc user_label's message 
+time: 4.042054 :aspect message to path addr_label's policy
+time: 4.047235 :router get proc user_label's message 
+time: 4.047252 :router get proc record_acl's message 
+time: 4.052459 :router get proc user_server's message 
+time: 4.052502 :router get proc record_server's message 
+time: 4.052633 :aspect message to path addr_verify's policy
+time: 4.052689 :send message to conn process!
+time: 4.057170 :send 205 data to conn user!
+
+time: 4.057195 :send (12800  4)message 205 to conn user!
+
+time: 4.057847 :router get proc record_server's message 
+time: 4.057902 :new msg match path store's policy
+time: 4.057910 :router get proc user_label's message 
+time: 4.058008 :send message to conn process!
+time: 4.062412 :send 200 data to conn user2!
+
+time: 4.062445 :send (12800  4)message 200 to conn user2!
+
+time: 5.029765 :channel receive (12816 2) message from conn user!
+
+time: 5.029805 :client forward (12816 2) message to main proc!
+
+time: 5.032712 :router get proc connector_proc's message 
+time: 5.032735 :remote msg match path record's policy
+time: 5.032822 :aspect message to path label_read's policy
+time: 5.035879 :channel receive (12816 3) message from conn user2!
+
+time: 5.035920 :client forward (12816 3) message to main proc!
+
+time: 5.037947 :router get proc connector_proc's message 
+time: 5.037971 :remote msg match path record's policy
+time: 5.037976 :router get proc user_label's message 
+time: 5.038064 :aspect message to path write_access's policy
+time: 5.043242 :router get proc record_server's message 
+time: 5.043271 :router get proc user_label's message 
+time: 5.043362 :aspect message to path read_access's policy
+time: 5.048577 :router get proc record_acl's message 
+time: 5.048672 :send message to conn process!
+time: 5.052464 :send 202 data to conn user!
+
+time: 5.052500 :send (12816  1)message 202 to conn user!
+
+time: 5.053750 :router get proc record_acl's message 
+time: 5.058877 :router get proc record_server's message 
+time: 5.058954 :send message to conn process!
+time: 5.062876 :send 205 data to conn user2!
+
+time: 5.062896 :send (12800  4)message 205 to conn user2!
+
+time: 5.064114 :router get proc record_server's message 
+time: 5.064159 :new msg match path store's policy
+time: 6.035253 :channel receive (12816 2) message from conn user2!
+
+time: 6.035300 :client forward (12816 2) message to main proc!
+
+time: 6.039346 :router get proc connector_proc's message 
+time: 6.039366 :remote msg match path record's policy
+time: 6.039455 :aspect message to path label_read's policy
+time: 6.044583 :router get proc user_label's message 
+time: 6.049801 :router get proc record_server's message 
+time: 6.049976 :aspect message to path read_access's policy
+time: 6.055121 :router get proc record_acl's message 
+time: 6.055268 :send message to conn process!
+time: 6.057417 :send 229 data to conn user2!
+
+time: 6.057435 :send (12816  1)message 229 to conn user2!
+

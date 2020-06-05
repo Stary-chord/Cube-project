@@ -1,0 +1,144 @@
+
+**************Begin new trust node proc****************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"","receiver_uuid":"","route
+    ":"","flow":"FINISH","state":"MATCH","flag":"NULL","ljump":1,"rjump":1,"record_t
+    ype":"MESSAGE","record_subtype":"CONN_SYNI","record_num":1,"record_size":90,"exp
+    and_num":0,"expand_size":0,"msg_uuid":"3cab0986ab28fb37d656a4fe6104cbe2bef005f79
+    413dcae7aa6feeb135c2488"},
+"RECORD":[
+    {"uuid":"8e8848e46b4725af6753531a332b447519206ae4d49304c2d0677a545d9b3725","serv
+        er_name":"server","service":"trust_server","server_addr":"x","flags":0,"nonce":"
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"
+    :user_client","route":"login","flow":"QUERY","state":"MATCH","flag":"NULL","ljum
+    p":1,"rjump":1,"record_type":"USER_DEFINE","record_subtype":"LOGIN","record_num"
+    :1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"150564f7c40546cd59
+    6458418aa6093235fbef8cb3cec7abab38e544e52921cf"},
+"RECORD":[
+    {"user_name":"wangdong","passwd":"123","proc_name":"","machine_uuid":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"820881d10d6396c3e94753fbdcc
+    71574349680ddfa961d09c4269ef1467772d9","receiver_uuid":"print","route":"login","
+    flow":"QUERY","state":"RESPONSE","flag":"LOCAL","ljump":1,"rjump":1,"record_type
+    ":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"record_size":20,"expan
+    d_num":0,"expand_size":0,"msg_uuid":"150564f7c40546cd596458418aa6093235fbef8cb3c
+    ec7abab38e544e52921cf"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"login succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"print","receiver_uuid":"","
+    route":"login","flow":"FINISH","state":"RESPONSE","flag":"LOCAL","ljump":2,"rjum
+    p":1,"record_type":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"recor
+    d_size":20,"expand_num":0,"expand_size":0,"msg_uuid":"150564f7c40546cd596458418a
+    a6093235fbef8cb3cec7abab38e544e52921cf"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"login succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"
+    :user_client","route":"record","flow":"QUERY","state":"MATCH","flag":"NULL","lju
+    mp":1,"rjump":1,"record_type":"RECORD_DEFINE","record_subtype":"WRITE","record_n
+    um":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"f88d0fdfd8eaa6b
+    ecfb001f9a90b36b389b31dc6e2e252a96b56718cecd7275a"},
+"RECORD":[
+    {"record_no":"003","segment":"customer_info","text":"My name is wangdong, my add
+        ress is Earth.","list_info":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"820881d10d6396c3e94753fbdcc
+    71574349680ddfa961d09c4269ef1467772d9","receiver_uuid":"print","route":"record",
+    "flow":"QUERY","state":"RESPONSE","flag":"LOCAL","ljump":1,"rjump":1,"record_typ
+    e":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"record_size":25,"expa
+    nd_num":0,"expand_size":0,"msg_uuid":"f88d0fdfd8eaa6becfb001f9a90b36b389b31dc6e2
+    e252a96b56718cecd7275a"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"write data succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"print","receiver_uuid":"","
+    route":"record","flow":"FINISH","state":"RESPONSE","flag":"LOCAL","ljump":2,"rju
+    mp":1,"record_type":"USER_DEFINE","record_subtype":"RETURN","record_num":1,"reco
+    rd_size":25,"expand_num":0,"expand_size":0,"msg_uuid":"f88d0fdfd8eaa6becfb001f9a
+    90b36b389b31dc6e2e252a96b56718cecd7275a"},
+"RECORD":[
+    {"return_code":"SUCCEED","return_info":"write data succeed!
+"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"msg_send","receiver_uuid":"
+    :user_client","route":"record","flow":"QUERY","state":"MATCH","flag":"NULL","lju
+    mp":1,"rjump":1,"record_type":"RECORD_DEFINE","record_subtype":"READ","record_nu
+    m":1,"record_size":0,"expand_num":0,"expand_size":0,"msg_uuid":"28d876d39c3685f0
+    596fa1f250881fa61fa7999aed5478948385324c7e25dc86"},
+"RECORD":[
+    {"record_no":"003","list_info":"20"}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"820881d10d6396c3e94753fbdcc
+    71574349680ddfa961d09c4269ef1467772d9","receiver_uuid":"print","route":"record",
+    "flow":"QUERY","state":"RESPONSE","flag":"LOCAL","ljump":1,"rjump":1,"record_typ
+    e":"RECORD_DEFINE","record_subtype":"RECORD","record_num":1,"record_size":49,"ex
+    pand_num":0,"expand_size":0,"msg_uuid":"28d876d39c3685f0596fa1f250881fa61fa7999a
+    ed5478948385324c7e25dc86"},
+"RECORD":[
+    {"record_no":"003","shopkeeper_info":"","intermed_info":"","customer_info":"My n
+        ame is wangdong, my address is Earth.","list_info":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
+{
+ "HEAD":{"tag":"MESG","version":65537,"sender_uuid":"print","receiver_uuid":"","
+    route":"record","flow":"FINISH","state":"RESPONSE","flag":"LOCAL","ljump":2,"rju
+    mp":1,"record_type":"RECORD_DEFINE","record_subtype":"RECORD","record_num":1,"re
+    cord_size":49,"expand_num":0,"expand_size":0,"msg_uuid":"28d876d39c3685f0596fa1f
+    250881fa61fa7999aed5478948385324c7e25dc86"},
+"RECORD":[
+    {"record_no":"003","shopkeeper_info":"","intermed_info":"","customer_info":"My n
+        ame is wangdong, my address is Earth.","list_info":""}
+    ],
+"EXPAND" :[]
+}
+
+************************************************************
